@@ -10,8 +10,9 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
+    background-color: honeydew;
     height: 100%;
-    color: #777;
+    color: #444444;
     line-height: 1.8;
 }
 
@@ -31,7 +32,7 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("../../static/portfolio/images/bg2.JPG");
+    background-image: url("../../static/portfolio/images/bg2.jpg");
     min-height: 400px;
 }
 
@@ -84,7 +85,7 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
+    <h3 class="w3-center"><a style="color: crimson">ABOUT ME</a></h3>
   <p class="w3-center"><em>I love Web Development</em></p>
   <p>Hello! Welcome to my website. I started web development a few months ago and I'm getting better at it day by day. I like to work on my own ideas, developing webapps on the ideas and deploying them and I also work on projects for clients.
       I'm from Bangalore, a city located in Karnataka, India.
@@ -92,7 +93,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Chandan Lakshman</b></p><br>
-      <img src="../../static/portfolio/images/dp.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" style="width: 190px;height: 175px;">
+      <img src="../../static/portfolio/images/bg3.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -104,7 +105,7 @@ body, html {
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Web Design</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Development</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
   </div>
@@ -132,7 +133,7 @@ body, html {
     Years of Coding
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">2+</span><br>
+    <span class="w3-xlarge">2</span><br>
     Frameworks
   </div>
 </div>
@@ -146,8 +147,8 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest WebApps.<br> Click on the images to make them bigger</em></p><br>
+    <h3 class="w3-center"><a style="color: crimson">MY PROJECTS</a></h3>
+    <p class="w3-center"><em>Here are some of my latest WebApps.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 
@@ -156,6 +157,7 @@ body, html {
     <div class="w3-col m3">
       <img src="{{ website.image.url }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="{{ website.description }}">
     <p></p>
+    <br>
     </div>
 {% endfor %}
   </div>
@@ -180,13 +182,11 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I LIVE</h3>
+    <h3 class="w3-center"><a style="color: crimson">CONTACT ME</a></h3>
   <p class="w3-center"><em>I'd love your feedback! So mail me by the email listed below.</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
